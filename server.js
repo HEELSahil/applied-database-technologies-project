@@ -1,5 +1,11 @@
 const express = require('express')
 const app = express()
+const cors = require('cors');
+
+// Use it before your routes are set up:
+app.use(cors({
+  origin: 'https://adtproject.heelsahil.com' // Adjust this to match your frontend domain
+}));
 const db=require('./db')
 app.use(express.json())
 const path = require('path')

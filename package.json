@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.19.2",
     "moment": "^2.29.1",
     "mongoose": "^5.12.12",
